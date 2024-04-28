@@ -161,7 +161,7 @@ main {
 #myimg {
   position: relative; 
   top: 56%;
-  transform: translateX(+60%);
+  transform: translateX(+54%);
 }
 
 #myimg img {
