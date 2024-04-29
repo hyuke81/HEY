@@ -205,20 +205,40 @@ main {
 
 /*section3*/
 
-* {margin:0;padding:0;box-sizing:border-box;}
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
 ul, li {list-style:none;}
 
 
-.slidebox {max-width:600px;margin:20px auto;position:relative;}
-.slidebox .slidelist {position:relative;white-space:nowrap;font-size:0;overflow:hidden;}
+.slidebox {
+  max-width:600px;
+  margin:20px auto;
+  position:relative;
+}
+.slidebox .slidelist {
+  position:relative;
+  white-space:nowrap;
+  font-size:0;
+  overflow:hidden;
+}
 .slidebox .slidelist .slideitem {
   position:relative;
   display:inline-block;
   vertical-align:middle;
   background-color:#fff;
   width:100%;
-  transition:all 1s;}
-.slidebox .slidelist .slideitem > a {display:block;width:auto;position:relative;margin: auto;}
+  transition:all 1s;
+}
+.slidebox .slidelist .slideitem > a {
+  display:block;
+  width:auto;
+  position:relative;
+  margin: auto;
+}
+
 .slidebox .slidelist .slideitem > a img {
   width: 50%;
   height: 50%; 
@@ -235,20 +255,41 @@ ul, li {list-style:none;}
   border-radius:50%;
   cursor:pointer;
 }
-.slidebox .slide-control [class*="control"] label.prev {left:-50px;background:#88a4f5 url('./img/left-arrow.png') center center / 30% no-repeat;}
-.slidebox .slide-control [class*="control"] label.next {right:-50px;background:#88a4f5 url('./img/right-arrow.png') center center / 30% no-repeat;}
 
-[name="slide"] {display:none;}
-#slide01:checked ~ .slidelist .slideitem {left:0;}
-#slide02:checked ~ .slidelist .slideitem {left:-100%;}
-#slide03:checked ~ .slidelist .slideitem {left:-200%;}
-#slide04:checked ~ .slidelist .slideitem {left:-300%;}
+.slidebox .slide-control [class*="control"] label.prev {
+  left:-50px;
+  background:#88a4f5 url('./img/left-arrow.png') center center / 30% no-repeat;
+}
+.slidebox .slide-control [class*="control"] label.next {
+  right:-50px;
+  background:#88a4f5 url('./img/right-arrow.png') center center / 30% no-repeat;
+}
 
-.slide-control [class*="control"] {display:none;}
-#slide01:checked ~ .slide-control .control01 {display:block;}
-#slide02:checked ~ .slide-control .control02 {display:block;}
-#slide03:checked ~ .slide-control .control03 {display:block;}
-#slide04:checked ~ .slide-control .control04 {display:block;}
+[name="slide"] {
+  display:none;
+}
+#slide01:checked ~ .slidelist .slideitem {
+  left:0;
+}
+#slide02:checked ~ .slidelist .slideitem {
+  left:-100%;
+}
+#slide03:checked ~ .slidelist .slideitem {
+  left:-200%;
+}
+
+.slide-control [class*="control"] {
+  display:none;
+}
+#slide01:checked ~ .slide-control .control01 {
+  display:block;
+}
+#slide02:checked ~ .slide-control .control02 {
+  display:block;
+}
+#slide03:checked ~ .slide-control .control03 {
+  display:block;
+}
 
 
 /*section4*/
@@ -458,7 +499,6 @@ ul, li {list-style:none;}
   width: fit-content;
   height: 280px;
   text-align: center;
-
   float:left;
 }
 #mys2 { 
@@ -466,7 +506,6 @@ ul, li {list-style:none;}
   width: fit-content;
   height: 280px;
   text-align: center;
-
   float:left;
 }
 
@@ -475,7 +514,6 @@ ul, li {list-style:none;}
   width: fit-content;
   height: 280px;
   text-align: center;
-
   float:left;
 }
 #sername p{
